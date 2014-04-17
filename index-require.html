@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Straps Booted</title>
+  <script>console.log("Starting to load styles!");</script>
+  <!--<link rel="stylesheet" href="../css/app.css"/>
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">-->
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#/code">Code</a></li>
+          <li><a href="#/random">Random Junk</a></li>
+          <li><a href="#/about">About</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div ng-view></div>
+
+  <div>cssetian: v<span app-version></span></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script type="application/javascript" data-main="/js/main" src="/js/lib/require.js"></script>
+</body>
+</html>
